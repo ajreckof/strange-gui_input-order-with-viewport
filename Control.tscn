@@ -1,0 +1,34 @@
+[gd_scene format=2]
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="Button" type="Button" parent="."]
+margin_left = 72.2329
+margin_top = 38.5538
+margin_right = 84.2329
+margin_bottom = 58.5538
+
+[node name="ViewportContainer" type="ViewportContainer" parent="Button"]
+margin_left = -72.0
+margin_top = -37.0
+margin_right = 185.0
+margin_bottom = 47.0
+stretch = true
+
+[node name="Viewport" type="Viewport" parent="Button/ViewportContainer"]
+size = Vector2( 257, 84 )
+render_target_update_mode = 3
+
+[node name="Button" type="Button" parent="Button/ViewportContainer/Viewport"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 12.0
+margin_bottom = 20.0
+
+[node name="Button2" type="Button" parent="."]
+margin_left = -19.7492
+margin_top = 51.7843
+margin_right = 244.251
+margin_bottom = 182.784
